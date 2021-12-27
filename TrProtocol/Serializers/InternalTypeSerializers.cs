@@ -140,7 +140,7 @@ namespace TrProtocol
                     t.SetValue(@base.Read(br), i);
                     var k = n - 1;
                     ++i[k];
-                    while (i[k] == t.GetLength(k))
+                    while (i[k] == t.GetLength(k) && k > 0)
                     {
                         i[k] = 0;
                         ++i[--k];

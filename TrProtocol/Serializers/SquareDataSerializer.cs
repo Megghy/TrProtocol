@@ -130,7 +130,7 @@ namespace TrProtocol.Models
                 {
                     for (int j = 0; j < size; j++)
                     {
-                        SimpleTileData simpleTileData = default(SimpleTileData);
+                        SimpleTileData simpleTileData = new();
                         simpleTileData.Flags1 = br.ReadByte();
                         simpleTileData.Flags2 = br.ReadByte();
                         SimpleTileData simpleTileData2 = simpleTileData;
